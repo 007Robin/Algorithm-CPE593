@@ -1,0 +1,56 @@
+Depth First Search: Recursively
+g.DFS(v)
+	visited	← [false, false, false, …]  //O(V)
+	g.DFS2(visited, v)
+end
+
+g.DFS2(visited, v)
+	visited[v] ← true
+	for i = 0 … v-1
+		if isAdjacent(v, i) AND NOT visited[v]
+		g.DFS2(visited, i)
+		end
+	end
+end
+
+
+g.DFS(v)
+	visited[*]← false  //O(V)
+	stack.push(v)
+	visited[v] ← true
+	while (NOT stack.empty())
+		v ← stack.pop()
+		print v
+		foreach n← neighbor(v)
+			if NOT visited[n] 
+				stack.push(n)
+				visited[n] ← true
+			end
+		end
+	end
+end
+
+g.BFS(v)
+	visited[*]← false
+	queue.enqueue(v)
+	visited[v] ← true
+	while NOT queue.isEmpty() // O(V)
+		v← queue.dequeue()
+		foreach n← neighbor(v) // O(V) omega(1) if using edge list implementation
+			if NOT visited[n]
+				queue.enqueue(n)
+				visited[n] ← true
+			end
+		end
+	end
+end
+
+bool ← g.isConnected()	//O(V^2)
+	visited← g.DFS(r)		//O(V^2)
+	for i← 0 to V
+		if NOT visited[i]
+			 return false
+		end
+   return true
+end
+
