@@ -1,0 +1,214 @@
+t is the responsibility of the processor to periodically check the status of the I/O module until it finds that the operation is complete.  
+Ture
+
+2. With isolated I/O there is a single address space for memory locations and I/O devices.
+With memory mapped I/O, there is a single address space for memory locations and I/O drives. With isolated I/Ok, the address space for I/O is isolated from that from memory, since the bus may be equipped with memory read and right plus input and output command lines.
+
+3. The difference between virtual circuits and packet switching
+the path of each packet
+
+4. With a daisy chain the processor just picks the interrupt line with the highest priority.
+False
+
+5. 
+ There are 1,100 (sectors) * 40,000 (cylinders)*6 (surfaces) = 264,000,000 blocks on this disk. Thus, the total storage capacity of this disk is 264M *0.5KB = 132GB.
+ 
+ 6. How many connections are required for 60 nodes to be connected in a full mesh topology
+ Node(node-1)/2=1770
+ 
+ 7. The channel architecture is more powerful and flexible, because it isolates and processes each operation independently, whereas the CPU handles the processing in a bus architecture.
+ 
+ 8. The purpose of a bus interface 
+ 
+ 9. The advantage of clustering is
+ 
+ Clustering servers is completely a scalable solution. You can add resources to the cluster afterwards.
+ If a server in the cluster needs any maintenance, you can do it by stopping it while handing the load over to other servers.
+ Among high availability options, clustering takes a special place since it is reliable and easy to configure. In case of a server is having a problem providing the services furthermore, other servers in the cluster can take the load.
+ 
+ 10. The _________ contains logic for performing a communication function between the peripheral and the bus.
+ I/O module
+ 
+ 11. The ________ layer is the key to the operation of Thunderbolt and what makes it attractive as a high-speed peripheral I/O technology.
+ 
+ common transport
+ 
+ 12. USB (Universal Serial Bus): the current primary external bus for connecting peripheral devices to a computer.
+								 
+								 13. Describes the fundamental configuration or layout of a network
+								 
+								 network topology
+								 
+								 14. a central connection device used to simplify wiring and maintenance 
+								 Hub
+								 
+								 15. The address for each node on an Ethernet is called
+								 
+								 16. An application needs to have reliable, end to end connectivity. Which of the following protocols will give you reliable connectivity?
+								 TCP
+								 
+								 17. contains i/o protocols that are mapped onto the transport layer.
+								 
+								 application layer
+								 
+								 18. To restore the original waveform that was used to modulate the carrier
+								 Demodulation.
+								 
+								 19. The main disadvantage of an I/O bus
+								 
+								 20. I /O system can be divided into two major components: the technologies used to interface the I/O devices to the rest of the system and I/O devices themselves.
+								 
+								 21. How does the virtual memory system prevent programs from accessing each other's data?
+								 By allocating distinct regions of physical memory to A and B,
+								 
+								 22. Device which is consists of a sensing mechanism integrated within the display screen called
+								 Touch screen
+								 
+								 23. To identify the network application requesting service, the transport protocol identifies the application that created the message and the application that is to receive the message with
+								 
+								 24.The network connection between the notes is not accessible from outside the cluster
+								 
+								 
+								 t is the responsibility of the processor to periodically check the status of the I/O module until it finds that the operation is complete.  
+Ture
+
+2. With isolated I/O there is a single address space for memory locations and I/O devices.
+With memory mapped I/O, there is a single address space for memory locations and I/O drives. With isolated I/Ok, the address space for I/O is isolated from that from memory, since the bus may be equipped with memory read and right plus input and output command lines.
+
+3. The difference between virtual circuits and packet switching
+the path of each packet
+
+4. With a daisy chain the processor just picks the interrupt line with the highest priority.
+False
+
+5. 
+ There are 1,100 (sectors) * 40,000 (cylinders)*6 (surfaces) = 264,000,000 blocks on this disk. Thus, the total storage capacity of this disk is 264M *0.5KB = 132GB.
+
+ 6. How many connections are required for 60 nodes to be connected in a full mesh topology
+ Node(node-1)/2=1770
+
+ 7. The channel architecture is more powerful and flexible, because it isolates and processes each operation independently, whereas the CPU handles the processing in a bus architecture.
+
+ 8. The purpose of a bus interface 
+
+ 9. The advantage of clustering is
+
+ Clustering servers is completely a scalable solution. You can add resources to the cluster afterwards.
+ If a server in the cluster needs any maintenance, you can do it by stopping it while handing the load over to other servers.
+ Among high availability options, clustering takes a special place since it is reliable and easy to configure. In case of a server is having a problem providing the services furthermore, other servers in the cluster can take the load.
+
+ 10. The _________ contains logic for performing a communication function between the peripheral and the bus.
+ I/O module
+
+ 11. The ________ layer is the key to the operation of Thunderbolt and what makes it attractive as a high-speed peripheral I/O technology.
+
+ common transport
+
+ 12. USB (Universal Serial Bus): the current primary external bus for connecting peripheral devices to a computer.
+
+								 13. Describes the fundamental configuration or layout of a network
+
+								 network topology
+
+								 14. a central connection device used to simplify wiring and maintenance 
+								 Hub
+
+								 15. The address for each node on an Ethernet is called
+
+								 16. An application needs to have reliable, end to end connectivity. Which of the following protocols will give you reliable connectivity?
+								 TCP
+
+								 17. contains i/o protocols that are mapped onto the transport layer.
+
+								 application layer
+
+								 18. To restore the original waveform that was used to modulate the carrier
+								 Demodulation.
+
+								 19. The main disadvantage of an I/O bus
+
+								 20. I /O system can be divided into two major components: the technologies used to interface the I/O devices to the rest of the system and I/O devices themselves.
+
+								 21. How does the virtual memory system prevent programs from accessing each other's data?
+								 By allocating distinct regions of physical memory to A and B,
+
+								 22. Device which is consists of a sensing mechanism integrated within the display screen called
+								 Touch screen
+
+								 23. To identify the network application requesting service, the transport protocol identifies the application that created the message and the application that is to receive the message with
+
+								 24.The network connection between the notes is not accessible from outside the cluster
+
+
+								 1.It is the responsibility of the processor to periodically check the status of the I/O module until it finds that the operation is complete.  
+								 Ture
+
+								 2. With isolated I/O there is a single address space for memory locations and I/O devices.
+								 With memory mapped I/O, there is a single address space for memory locations and I/O drives. With isolated I/Ok, the address space for I/O is isolated from that from memory, since the bus may be equipped with memory read and right plus input and output command lines.
+
+								 3. The difference between virtual circuits and packet switching
+								 the path of each packet
+
+								 4. With a daisy chain the processor just picks the interrupt line with the highest priority.
+								 False
+
+								 5. 
+								  There are 1,100 (sectors) * 40,000 (cylinders)*6 (surfaces) = 264,000,000 blocks on this disk. Thus, the total storage capacity of this disk is 264M *0.5KB = 132GB.
+
+								  6. How many connections are required for 60 nodes to be connected in a full mesh topology
+								  Node(node-1)/2=1770
+
+								  7. The channel architecture is more powerful and flexible, because it isolates and processes each operation independently, whereas the CPU handles the processing in a bus architecture.
+
+								  8. The purpose of a bus interface 
+
+								  9. The advantage of clustering is
+
+								  Clustering servers is completely a scalable solution. You can add resources to the cluster afterwards.
+								  If a server in the cluster needs any maintenance, you can do it by stopping it while handing the load over to other servers.
+								  Among high availability options, clustering takes a special place since it is reliable and easy to configure. In case of a server is having a problem providing the services furthermore, other servers in the cluster can take the load.
+
+								  10. The _________ contains logic for performing a communication function between the peripheral and the bus.
+								  I/O module
+
+								  11. The ________ layer is the key to the operation of Thunderbolt and what makes it attractive as a high-speed peripheral I/O technology.
+
+								  common transport
+
+								  12. USB (Universal Serial Bus): the current primary external bus for connecting peripheral devices to a computer.
+
+																  13. Describes the fundamental configuration or layout of a network
+
+																  network topology
+
+																  14. a central connection device used to simplify wiring and maintenance 
+																  Hub
+
+																  15. The address for each node on an Ethernet is called
+
+																  16. An application needs to have reliable, end to end connectivity. Which of the following protocols will give you reliable connectivity?
+																  TCP
+
+																  17. contains i/o protocols that are mapped onto the transport layer.
+
+																  application layer
+
+																  18. To restore the original waveform that was used to modulate the carrier
+																  Demodulation.
+
+																  19. The main disadvantage of an I/O bus
+
+																  20. I /O system can be divided into two major components: the technologies used to interface the I/O devices to the rest of the system and I/O devices themselves.
+
+																  21. How does the virtual memory system prevent programs from accessing each other's data?
+																  By allocating distinct regions of physical memory to A and B,
+
+																  22. Device which is consists of a sensing mechanism integrated within the display screen called
+																  Touch screen
+
+																  23. To identify the network application requesting service, the transport protocol identifies the application that created the message and the application that is to receive the message with
+
+																  24.The network connection between the notes is not accessible from outside the cluster
+
+
+
