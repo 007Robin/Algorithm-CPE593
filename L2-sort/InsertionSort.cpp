@@ -4,18 +4,22 @@
 #include<vector>
 using namespace std;
 
-void InsertionSort(vector<int>& v) {
-	//number of elements
-	int n = v[0];
+void InsertionSort(vector<int>& arr) {
 	//insertion
-	for(int i = 2; i <= n; ++i) {
-		int temp = v[i];
-		int j;
-		for(j = i; j >= 1 && v[j - 1] > temp; --j) 
-			v[j] = v[j - 1];
-		v[j] = temp;
-	}
-	v.erase(v.begin());
+	int i, key, j;
+   	for (i = 1; i < arr.size(); i++)
+	{
+		key = arr[i];
+       		j = i-1;
+	       /* Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position */
+	       while (j >= 0 && arr[j] > key)
+	       {
+		   arr[j+1] = arr[j];
+		   j = j-1;
+	       }
+	       arr[j+1] = key;
+   	}
+	
 }
 
 //read from file
@@ -28,6 +32,7 @@ vector<int> Loadfile(const string& filename) {
 		while(ifs >> n)
 			v.push_back(n);
 	}
+	v.erase(v.begin());
 	return v;
 }
 
