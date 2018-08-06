@@ -1,40 +1,41 @@
 //Xin Song -- BoyerMoore
+//https://www.geeksforgeeks.org/pattern-searching-set-7-boyer-moore-algorithm-bad-character-heuristic/
 #include<iostream>
 #include<vector>
 using namespace std;
 
-// fast single string search
-bool BoyerMoore(string& search, string& target){
+// fast target first ocurrence index in source string
+int BoyerMoore(string& source, string& target){
 	int m = target.size();
 	int n = search.size();
-	vector<int> table(128, m);
-	// traverse target from its back, fulfill the table
-	for(int i = m - 2, j = 0; i >= 0; i--) {
-			table[target[i]] = ++j;
-	}
-	// match begin at the last element both in target and search word
-	// i -- target , j -- search
-	int jump = 0;
-	int i = m - 1, j = m - 1;
-	while(j < n) {
-		if(search[j] != target[i]) {
-			jump = table[search[j]];
-			j += jump;
-			// if some match already occurs at the inside of target, but now dismatch occurs
-			// reset i to target's back.
-			if( i != m - 1) {
-				i = m - 1;
-			}
-		}
-		else{	
-			if(i == 0) {
-				return true;
-				break;
-			}
-			j--; i--;
-		}
-	}
-	return false;
+	if(m == 0) return 0;
+        if(m > n) return -1;
+        
+        // Boyer Moore's 预处理table, 未出现的全是-1，target里出现的字符，table里依次赋值i
+        vector<int> table(256, -1);
+        for(int i = 0; i < m; ++i) {
+            table[target[i]] = i;
+        }
+        
+        // s为要求的初次匹配索引号，j=m-1从target尾巴开始匹配
+        int s = 0; 
+        while(s <= (n-m)) {
+            int j = m - 1;
+	    // 当source target一直匹配时,j--，直至<0，证明找到了，返回s
+            while(j >= 0 && source[s + j] == target[j])  {
+                j--;
+            }
+            if(j < 0) {
+                return s;
+		//  s += (s+m < n)? m-badchar[txt[s+m]] : 1;   (如果要求多次匹配的地方，加这行进行下次匹配)
+            }
+            else {
+		// 当一旦有不match的，s就跳j - table[source[s+j]], 保证source中的该坏字符
+        	// 对齐target里该字符最后一次出现的地方，max(1)是确保我们get a positive shift
+                s += max(1, j - table[source[s+j]]);
+            }
+        }
+        return -1;
 }
 
 int main(){
