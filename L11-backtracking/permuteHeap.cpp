@@ -1,4 +1,5 @@
 //permute -- time complextity O(N!) space complexity O(N)
+//http://www.cs.princeton.edu/~rs/talks/perms.pdf
 #include<iostream>
 using namespace std;
 class Permute{
@@ -51,3 +52,13 @@ int main() {
 	Permute p(x, 4);
 
 }
+/*
+Sedgewick’s Algorithm #1 (double swap)
+ABCD
+DBCA
+CBDA
+BCDA
+
+Heap’s Algorithm #4 in Sedgewick
+
+*/
