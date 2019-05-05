@@ -5,7 +5,15 @@ using namespace std;
 
 //O(logn)
 int gcd(int a, int b) { 
-	return (b == 0) ? a: gcd(b, a%b);
+	return if (b == 0) ? a: gcd(b, a%b);
+}
+int gcd2(int a, int b) { 
+	while(b != 0) {
+		int temp = a; 
+		a = b; 
+		b = b % temp;	
+	}
+	return a;
 }
 
 //O(logn)
